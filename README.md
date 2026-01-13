@@ -1,5 +1,4 @@
-[README.md](https://github.com/user-attachments/files/24579833/README.md)
-# Only Marketplace
+# <img src="OnlyMarketplace_logo.png" width="100" align="center" alt="Only Marketplace Logo"> Only Marketplace
 
 **Only Marketplace** is a minimal Chrome Extension designed to help you focus. It strictly blocks the main Facebook Feed (and other distracting areas) while ensuring **Facebook Marketplace** remains fully accessible.
 
