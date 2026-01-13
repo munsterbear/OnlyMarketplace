@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "priority": 100,
+        "action": {
+            "type": "allow"
+        },
+        "condition": {
+            "urlFilter": "facebook.com/marketplace",
+            "resourceTypes": [
+                "main_frame",
+                "sub_frame",
+                "xmlhttprequest"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 10,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "extensionPath": "/blocked.html"
+            }
+        },
+        "condition": {
+            "regexFilter": "^https?://(www\\.)?facebook\\.com/.*",
+            "resourceTypes": [
+                "main_frame"
+            ]
+        }
+    }
+]
