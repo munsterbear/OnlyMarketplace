@@ -15,6 +15,21 @@
         }
     },
     {
+        "id": 3,
+        "priority": 100,
+        "action": {
+            "type": "allow"
+        },
+        "condition": {
+            "urlFilter": "facebook.com/saved",
+            "resourceTypes": [
+                "main_frame",
+                "sub_frame",
+                "xmlhttprequest"
+            ]
+        }
+    },
+    {
         "id": 2,
         "priority": 10,
         "action": {

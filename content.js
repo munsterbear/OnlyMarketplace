@@ -3,19 +3,16 @@
 const enforceOnlyMarketplace = () => {
     const url = window.location.href;
 
-    // Safety check: Don't block our own blocked page
-    if (url.includes('blocked.html')) return;
-
     // Check if valid
     const isMarketplace = url.includes('/marketplace');
+    const isSaved = url.includes('/saved');
 
-    if (!isMarketplace) {
+    if (!isMarketplace && !isSaved) {
         // Stop the page from doing (almost) anything else
         window.stop();
 
-        // Immediately redirect
-        const blockedUrl = chrome.runtime.getURL('blocked.html');
-        window.location.replace(blockedUrl);
+        // Immediately redirect to Marketplace
+        window.location.replace('https://www.facebook.com/marketplace');
     }
 };
 
